@@ -13,7 +13,7 @@ def reset_activities():
     yield
 
     app_module.activities.clear()
-    app_module.activities.update(copy.deepcopy(original_activities))
+    app_module.activities.update(original_activities)
 
 
 @pytest.fixture
